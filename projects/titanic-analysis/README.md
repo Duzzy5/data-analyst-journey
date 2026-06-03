@@ -65,14 +65,71 @@ The following cleaning decisions were made:
 
 ---
 
+---
+
+## Exploratory Data Analysis (EDA)
+
+### Hypothesis 1: Gender and Survival
+
+**Observation:**
+- Female survival rate: 74.2%
+- Male survival rate: 18.9%
+
+**Conclusion:**
+The analysis supports the hypothesis. Female passengers had a significantly higher survival rate than male passengers.
+
+---
+
+### Hypothesis 2: Age and Survival
+
+**Observation:**
+- The average age of survivors was approximately 28 years.
+- Younger passengers generally showed better survival outcomes than older passengers.
+- The youngest age group had the highest survival rate.
+
+**Conclusion:**
+The analysis supports the hypothesis. Age appears to have influenced survival outcomes.
+
+---
+
+### Hypothesis 3: Family and Survival
+
+**Observation:**
+- Passengers travelling with family had a survival rate of approximately 50.6%.
+- Passengers travelling alone had a survival rate of approximately 30.4%.
+- Medium-sized families generally showed better survival outcomes than passengers travelling alone.
+
+**Conclusion:**
+The analysis supports the hypothesis. Travelling with family was associated with a higher survival rate.
+
+---
+
+### Hypothesis 4: Passenger Class and Survival
+
+**Observation:**
+- Class 1 survival rate: 63.0%
+- Class 2 survival rate: 47.3%
+- Class 3 survival rate: 24.2%
+- Class 3 contained the highest number of passengers.
+
+**Conclusion:**
+The analysis supports the hypothesis. First-class passengers had a much higher survival rate than third-class passengers.
+
+
 ## Current Status
 
 - [x] Dataset Exploration
 - [x] Missing Value Analysis
 - [x] Data Cleaning
 - [x] Hypothesis Generation
-- [ ] Exploratory Data Analysis (EDA)
-- [ ] Visualizations
-- [ ] Insights
+- [x] Exploratory Data Analysis (EDA)
+- [x] Visualizations
+- [x] Insights
+- [ ] Feature Engineering
+- [ ] Machine Learning Model
+- [ ] Model Evaluation
+- [ ] Model Comparison
+- [ ] Final Conclusions
+- [ ] Project Documentation
 - [ ] Conclusions
 - [ ] Machine Learning Model (Optional)
