@@ -115,6 +115,14 @@ The analysis supports the hypothesis. Travelling with family was associated with
 **Conclusion:**
 The analysis supports the hypothesis. First-class passengers had a much higher survival rate than third-class passengers.
 
+## Key Insights
+
+1. Female passengers were significantly more likely to survive than male passengers.
+2. Younger passengers generally had better survival outcomes than older passengers.
+3. Passengers travelling with family members had higher survival rates than passengers travelling alone.
+4. First-class passengers had the highest survival rate, while third-class passengers had the lowest.
+5. Although third-class passengers made up the largest group on the ship, they experienced the poorest survival outcomes.
+6. Passenger class, gender, age, and family size all appear to be important factors influencing survival.
 
 ## Current Status
 
