@@ -124,6 +124,111 @@ The analysis supports the hypothesis. First-class passengers had a much higher s
 5. Although third-class passengers made up the largest group on the ship, they experienced the poorest survival outcomes.
 6. Passenger class, gender, age, and family size all appear to be important factors influencing survival.
 
+## Machine Learning Phase
+
+### Features Used
+
+The following features were selected for model training:
+
+- Pclass
+- Sex
+- Age
+- Fare
+- Embarked
+- FamilySize
+
+### Data Preprocessing
+
+- Missing values were handled during the cleaning phase.
+- Categorical variables (Sex and Embarked) were encoded into numerical values.
+- Feature matrix (X) and target variable (y) were created.
+- Dataset was split into training and testing sets using an 80:20 ratio.
+
+### Models Trained
+
+The following classification models were trained and evaluated:
+
+1. Logistic Regression
+2. Decision Tree Classifier
+3. Random Forest Classifier
+4. K-Nearest Neighbors (KNN)
+
+### Model Performance
+
+| Model | Accuracy |
+|---------|---------|
+| Logistic Regression | 80% |
+| Decision Tree | 76% |
+| Random Forest | 81% |
+| KNN | 73% |
+
+### Best Model
+
+Random Forest achieved the highest accuracy of 81% and was selected as the final model for predicting Titanic passenger survival.
+
+### Key Findings
+
+- Female passengers had significantly higher survival rates than male passengers.
+- First-class passengers had much higher survival rates than third-class passengers.
+- Passengers traveling with family generally had better survival chances than those traveling alone.
+- Younger passengers showed higher survival rates than most adult groups.
+- Passenger class appeared to have a stronger impact on survival than embarkation port.
+
+### Final Conclusion
+
+This project demonstrates a complete machine learning workflow including:
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Hypothesis Testing
+- Feature Engineering
+- Data Preprocessing
+- Model Training
+- Model Evaluation
+- Model Comparison
+
+The Random Forest model achieved the best performance with an accuracy of 81%.
+
+## Conclusions
+
+Through exploratory data analysis and hypothesis testing, several factors influencing passenger survival were identified.
+
+Key findings include:
+
+- Female passengers had a significantly higher survival rate than male passengers.
+- First-class passengers were much more likely to survive than third-class passengers.
+- Passengers traveling with family generally had better survival chances than those traveling alone.
+- Younger passengers showed higher survival rates compared to many adult age groups.
+- Passenger class had a stronger impact on survival than embarkation port.
+
+These findings support the historical understanding that priority was often given to women, children, and higher-class passengers during the evacuation process.
+
+---
+
+## Machine Learning Model
+
+After completing data cleaning, feature engineering, and exploratory analysis, multiple machine learning models were trained to predict passenger survival.
+
+The following models were evaluated:
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+- K-Nearest Neighbors (KNN)
+
+### Model Performance
+
+| Model | Accuracy |
+|---------|---------|
+| Logistic Regression | 80% |
+| Decision Tree | 76% |
+| Random Forest | 81% |
+| KNN | 73% |
+
+Among all tested models, the Random Forest Classifier achieved the highest accuracy of 81% and was selected as the final model.
+
+This project demonstrates a complete machine learning workflow, including data preprocessing, feature engineering, model training, model evaluation, and model comparison.
+
 ## Current Status
 
 - [x] Dataset Exploration
@@ -133,11 +238,11 @@ The analysis supports the hypothesis. First-class passengers had a much higher s
 - [x] Exploratory Data Analysis (EDA)
 - [x] Visualizations
 - [x] Insights
-- [ ] Feature Engineering
-- [ ] Machine Learning Model
-- [ ] Model Evaluation
-- [ ] Model Comparison
-- [ ] Final Conclusions
-- [ ] Project Documentation
-- [ ] Conclusions
-- [ ] Machine Learning Model (Optional)
+- [x] Feature Engineering
+- [x] Machine Learning Model
+- [x] Model Evaluation
+- [x] Model Comparison
+- [x] Final Conclusions
+- [x] Project Documentation
+- [x] Conclusions
+- [x] Machine Learning Model (Optional)
