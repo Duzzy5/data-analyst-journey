@@ -229,6 +229,21 @@ Among all tested models, the Random Forest Classifier achieved the highest accur
 
 This project demonstrates a complete machine learning workflow, including data preprocessing, feature engineering, model training, model evaluation, and model comparison.
 
+## Feature Importance
+
+A Random Forest model was used to measure feature importance.
+
+Top predictive features:
+
+1. Fare
+2. Sex
+3. Age
+4. FamilySize
+5. Pclass
+6. Embarked
+
+The feature importance analysis confirmed many of the insights discovered during EDA, particularly the influence of passenger gender, age, and socioeconomic status on survival.
+
 ## Current Status
 
 - [x] Dataset Exploration
