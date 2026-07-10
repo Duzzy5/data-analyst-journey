@@ -1,60 +1,95 @@
-# NumPy Day 3 - Boolean Indexing, Conditional Filtering & Fancy Indexing
+# NumPy Day 3 - Quick Revision
 
-# Why Boolean Indexing?
+## Boolean Comparison
 
-In data analysis, we rarely need the entire dataset.
+```python
+arr > 10
+arr < 20
+arr >= 30
+arr <= 40
+arr == 25
+arr != 50
+```
 
-Instead, we ask questions like:
-
-* Which students scored above 80?
-* Which employees earn more than ₹50,000?
-* Which products are out of stock?
-
-Boolean Indexing allows us to answer these questions without writing loops.
+Returns a Boolean array.
 
 ---
 
-# Boolean Comparisons
-
-NumPy compares every element in an array individually.
-
-Example:
+## Boolean Indexing
 
 ```python
-import numpy as np
-
-arr = np.array([10, 20, 30, 40, 50])
-
-print(arr > 25)
+arr[arr > 20]
 ```
 
-Output:
-
-```text
-[False False True True True]
-```
-
-Each element is checked independently.
+Returns only the elements that satisfy the condition.
 
 ---
 
-# Boolean Masks
+## Multiple Conditions
 
-The boolean array created after a comparison is called a **Boolean Mask**.
-
-Example:
+AND
 
 ```python
-arr > 25
+(arr > 20) & (arr < 50)
 ```
 
-creates
+OR
 
-```text
-[False False True True True]
+```python
+(arr < 20) | (arr > 50)
 ```
 
-NumPy then uses this mask to select only the `True` values.
+Remember:
+
+* Use `&` instead of `and`
+* Use `|` instead of `or`
+* Always use parentheses around each condition
+
+---
+
+## Even Numbers
+
+```python
+arr[arr % 2 == 0]
+```
+
+---
+
+## Fancy Indexing (1D)
+
+```python
+arr[[0,2,4]]
+```
+
+Selects elements at indices 0, 2 and 4.
+
+---
+
+## Fancy Indexing (2D)
+
+```python
+arr[[0,3]]
+```
+
+Selects the first and fourth rows.
+
+---
+
+## Important Interview Points
+
+* `and` and `or` do not work on NumPy arrays.
+* `&` and `|` perform element-wise logical operations.
+* `arr[2]` returns a scalar.
+* `arr[[2]]` returns an ndarray.
+* Boolean Indexing is one of the most frequently used techniques in data analysis.
+
+---
+
+## Remember
+
+Whenever you need to filter data, think:
+
+> "Can I create a Boolean Mask?"
 
 Example:
 
